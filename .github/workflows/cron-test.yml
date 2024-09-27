@@ -1,0 +1,24 @@
+name: Run every 5 minute
+
+
+# generate a github action yml that can run every minute
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  build:
+    name: "the only one job in this workflow"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run a one-line script
+        run: dotnet --info
+
+      - name: Run a multi-line script
+        run: |
+          git log
+          dotnet --info
+          echo "hello world"

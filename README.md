@@ -10,5 +10,8 @@ git config --global https.proxy 127.0.0.1:yourProxyPort
 git config --global http.proxy 127.0.0.1:yourProxyPort
 ```
 
+## learn and practice action in this page
+https://github-actions-hero.vercel.app/
 
 
+## learn git in this app
