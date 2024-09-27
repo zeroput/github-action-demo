@@ -1,0 +1,25 @@
+name: Test the dotnet run
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: "Sample Build 81191"
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run a one-line script
+        run: dotnet --info
+
+      - name: Run a multi-line script
+        run: |
+          git log
+          dotnet build

@@ -17,7 +17,7 @@ jobs:
   build:
     name: "Sample Build 81191"
     # The type of runner that the job will run on  #  ubuntu-latest windows
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # - name: Checkout the repository
