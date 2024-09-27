@@ -1,10 +1,10 @@
-name: Run every 5 minute
+name: Run every hour
 
 
 # generate a github action yml that can run every minute
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '30 * * * *'
 
 jobs:
   build:
